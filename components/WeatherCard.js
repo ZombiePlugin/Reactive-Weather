@@ -1,5 +1,9 @@
 import React from "react";
-import sunny from "../assets/Sunny.svg";
+
+import Sunny from "../assets/Sunny.svg";
+import Cloudy from "../assets/cloudy.svg";
+import Rainy from "../assets/Rainy.svg";
+import PartlyCloudy from "../assets/PartlyCloudy.svg";
 
 function WeatherCard({ city }) {
   return (
@@ -7,7 +11,7 @@ function WeatherCard({ city }) {
       <div className="img-container">
         <img
           className="card-img-top"
-          src={sunny}
+          src={city.forecast}
           alt="Card image cap"
           id="icon"
         />
